@@ -122,7 +122,7 @@ else:
     print("The input is invalid or the number is not in the dictionary.")
 
 
-#5
+#question 5
 #a
 
 divided = {'Tony': 41, 'Rhodey': 43, 'Nat': 35}

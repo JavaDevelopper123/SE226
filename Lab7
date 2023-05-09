@@ -1,0 +1,15 @@
+import cv2
+
+image = cv2.imread('colorful_image.jpg')
+
+blue_channel, green_channel, red_channel = cv2.split(image)
+
+green_channel[:] = 0
+
+modified_image = cv2.merge((blue_channel, green_channel, red_channel))
+
+cv2.imshow('Original Image', image)
+cv2.imshow('Modified Image', modified_image)
+
+cv2.waitKey(0)
+cv2.destroyAllWindows()
